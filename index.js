@@ -7,7 +7,8 @@ hexBtn.addEventListener('click', getHex);
 
 function getHex() {
     let hexColor = "#";
-    for(let i=0; i<6; i++) {
+    /*you may change in cycle for i<3*/
+    for(let i = 0; i < 6; i++) {
         let random = Math.floor(Math.random()*hexColorNum.length);
         hexColor +=hexColorNum[random];
         bodyBtn.style.backgroundColor = hexColor;
