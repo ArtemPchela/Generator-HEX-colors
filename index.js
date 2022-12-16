@@ -48,5 +48,13 @@ btnCopy.addEventListener('click', function copyDivToClipboard() {
 
 
 modal.addEventListener('click', function () {
-  document.getElementById('modal').style.display = 'none';
+  modal.style.display = 'none';
 });
+
+// Close If Outside Click
+window.addEventListener("click", outsideClick)
+function outsideClick(e) {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+}
